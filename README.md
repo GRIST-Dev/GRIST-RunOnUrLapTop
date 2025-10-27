@@ -1,13 +1,13 @@
 # 从零开始：在 macOS 上运行湿大气斜压波算例（GRIST）
 
-本教程以macOS系统为例，介绍如何在类Unix环境下，从零开始配置并运行 **GRIST 模式** 的湿大气斜压波算例。  
+本教程以macOS系统为例，介绍如何在类Unix环境下，从零开始配置并运行 **GRIST 模式** 的湿大气斜压波算例（图1）。  
 目标是帮助用户在本地笔记本上完成完整的编译、运行与可视化的完整流程。总体流程同样适用如Ubuntu Linux等系统。
 Windows系统可通过安装虚拟机实现运行。
 
 本说明仅限教学用途。
 
 ![Figure 1](https://github.com/GRIST-Dev/GRIST-RunOnUrLapTop/blob/main/doc/dcmip-bw.png)
-*Figure 1. 本算例所计算的湿大气斜压波算例展示的相对涡度场（注：为高分辨率设置，教程演示为低分辨率设置）*
+*图1. 本算例所计算的湿大气斜压波算例展示的相对涡度场（注：为高分辨率设置，教程演示为低分辨率设置）*
 
 ---
 
@@ -144,7 +144,10 @@ export use_ftorch="no"    #
 ./build.sh gcm
 ```
 
-编译完成后，`${PREFIX}` 目录下将生成 GRIST 可执行文件ParGRIST_gcm.exe。
+编译完成后，`${PREFIX}` 目录下将生成 GRIST 可执行文件ParGRIST_gcm.exe（图2）。
+
+![Figure 2](https://github.com/GRIST-Dev/GRIST-RunOnUrLapTop/blob/main/doc/Figure2_AfterCompile.png)
+*图2. 模式编译成功后效果图 *
 
 ---
 
@@ -159,6 +162,11 @@ gridFilePath           = '/Users/zhangyi/model/inputdata/grid/' #设置为实际
 ```bash
 ./run.sh
 ```
+
+运行完毕后，界面如图3所示。
+
+![Figure 3](https://github.com/GRIST-Dev/GRIST-RunOnUrLapTop/blob/main/doc/Figure3_AfterRun.png)
+*图3. 模式运行成功后效果图 *
 
 ---
 
