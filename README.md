@@ -173,10 +173,13 @@ gridFilePath           = '/Users/zhangyi/model/inputdata/grid/' #设置为实际
 GRIST是非结构网格模式，输出文件包括 1d 2d 3d 文件，在文件名中有标识。其中，1d文件为球面2维信息，可通过cdo插值到经纬度网格
 
 ```bash
-cdo -f nc remapdis,global_4 GRIST.ATM.G4UR.dtp.2020-06-09-00000.1d.h1.nc GRIST.ATM.G4UR.dtp.2020-06-09-00000.grid.h1.nc
+cdo -f nc remapdis,global_4 GRIST.ATM.G4UR.dtp.2020-06-11-00000.1d.h1.nc GRIST.ATM.G4UR.dtp.2020-06-11-00000.grid.h1.nc
 ```
 
-使用 **Panoply** 打开 `GRIST.ATM.G4UR.dtp.2020-06-09-00000.grid.h1.nc` 查看模拟结果分布和演变（如ps表面气压）。
+使用 **Panoply** 打开 `GRIST.ATM.G4UR.dtp.2020-06-11-00000.grid.h1.nc` 查看模拟结果分布和演变（如PS表面气压; 图4）。
+
+![Figure 4](https://github.com/GRIST-Dev/GRIST-RunOnUrLapTop/blob/main/doc/Figure4_PS.png)
+*图4. 模式积分10天后的地表气压*
 
 
 ---
