@@ -145,7 +145,7 @@ export use_ftorch="no"    #
 编译完成后，`${PREFIX}` 目录下将生成 GRIST 可执行文件ParGRIST_gcm.exe（图2）。
 
 ![Figure 2](https://github.com/GRIST-Dev/GRIST-RunOnUrLapTop/blob/main/doc/Figure2_AfterCompile.png)
-*图2. 模式编译成功后效果图 *
+*图2. 模式编译成功后效果图*
 
 ---
 
@@ -164,7 +164,7 @@ gridFilePath           = '/Users/zhangyi/model/inputdata/grid/' #设置为实际
 运行完毕后，界面如图3所示。
 
 ![Figure 3](https://github.com/GRIST-Dev/GRIST-RunOnUrLapTop/blob/main/doc/Figure3_AfterRun.png)
-*图3. 模式运行成功后效果图 *
+*图3. 模式运行成功后效果图*
 
 ---
 
